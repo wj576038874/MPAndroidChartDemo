@@ -394,7 +394,7 @@ public class ListChartActivity extends AppCompatActivity {
         barDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);//设置柱状图的数据依赖于左边的Y轴
         barDataSet.setDrawValues(true);//设置不显示数据
         barDataSet.setValueTextColor(Color.rgb(159, 143, 186));//设置数据的文本颜色
-        barDataSet.setValueTextSize(15f);//设置数据显示的文字大小
+        barDataSet.setValueTextSize(12f);//设置数据显示的文字大小
         barDataSet.setFormSize(15.f);//设置图例大小
         barDataSet.setForm(Legend.LegendForm.CIRCLE);
 
@@ -425,6 +425,7 @@ public class ListChartActivity extends AppCompatActivity {
         barDataSet2.setColor(ContextCompat.getColor(this, R.color.bar2));//设置柱状图的颜色
         barDataSet2.setAxisDependency(YAxis.AxisDependency.LEFT);//设置柱状图的数据依赖于左边的Y轴
         barDataSet2.setDrawValues(true);//设置不显示数据
+        barDataSet2.setValueTextSize(12f);//设置数据显示的文字大小
         barDataSet2.setValueTextColor(Color.rgb(159, 143, 186));//设置数据显示的颜色
         barDataSet2.setFormSize(15.f);//设置图例大小
         barDataSet2.setForm(Legend.LegendForm.CIRCLE);

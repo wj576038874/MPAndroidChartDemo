@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="line1">#7f83f3</color>
+    <color name="line2">#d56bae</color>
+    <color name="line3">#5f80d1</color>
+
+    <color name="bar1">#98e3e4</color>
+    <color name="bar2">#ccbee8</color>
+
+    <color name="line">#cecece</color>
+
+    <color name="text_color">#999</color>
+
+    <color name="youxiu">#00EE00</color>
+
+</resources>

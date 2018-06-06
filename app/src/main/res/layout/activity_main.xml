@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_piechart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="饼图" />
+
+    <Button
+        android:id="@+id/btn_signBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="单柱状图（横向）" />
+
+    <Button
+        android:id="@+id/btn_signBarChart2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="单柱状图（纵向）" />
+
+    <Button
+        android:id="@+id/btn_multiBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="多柱状图" />
+
+    <Button
+        android:id="@+id/btn_signLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="单折线图" />
+
+    <Button
+        android:id="@+id/btn_multiLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="多折线图" />
+
+    <Button
+        android:id="@+id/btn_leida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="雷达图" />
+
+    <Button
+        android:id="@+id/btn_combined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="组合图" />
+
+    <Button
+        android:id="@+id/btn_listchart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="集合" />
+
+</LinearLayout>

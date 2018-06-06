@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Linear"
+        android:title="Linear" />
+    <item
+        android:id="@+id/EaseInQuad"
+        android:title="EaseInQuad" />
+    <item
+        android:id="@+id/EaseOutQuad"
+        android:title="EaseOutQuad" />
+    <item
+        android:id="@+id/EaseInOutQuad"
+        android:title="EaseInOutQuad" />
+
+    <item
+        android:id="@+id/EaseInCubic"
+        android:title="EaseInCubic" />
+    <item
+        android:id="@+id/EaseOutCubic"
+        android:title="EaseOutCubic" />
+    <item
+        android:id="@+id/EaseInOutCubic"
+        android:title="EaseInOutCubic" />
+    <item
+        android:id="@+id/EaseInQuart"
+        android:title="EaseInQuart" />
+    <item
+        android:id="@+id/EaseOutQuart"
+        android:title="EaseOutQuart" />
+    <item
+        android:id="@+id/EaseInOutQuart"
+        android:title="EaseInOutQuart" />
+    <item
+        android:id="@+id/EaseInSine"
+        android:title="EaseInSine" />
+    <item
+        android:id="@+id/EaseOutSine"
+        android:title="EaseOutSine" />
+    <item
+        android:id="@+id/EaseInOutSine"
+        android:title="EaseInOutSine" />
+    <item
+        android:id="@+id/EaseInExpo"
+        android:title="EaseInExpo" />
+    <item
+        android:id="@+id/EaseOutExpo"
+        android:title="EaseOutExpo" />
+    <item
+        android:id="@+id/EaseInOutExpo"
+        android:title="EaseInOutExpo" />
+    <item
+        android:id="@+id/EaseInCirc"
+        android:title="Linear" />
+    <item
+        android:id="@+id/EaseOutCirc"
+        android:title="Linear" />
+    <item
+        android:id="@+id/EaseInOutCirc"
+        android:title="EaseInOutCirc" />
+    <item
+        android:id="@+id/EaseInElastic"
+        android:title="EaseInElastic" />
+    <item
+        android:id="@+id/EaseOutElastic"
+        android:title="EaseOutElastic" />
+    <item
+        android:id="@+id/EaseInOutElastic"
+        android:title="EaseInOutElastic" />
+    <item
+        android:id="@+id/EaseInBack"
+        android:title="EaseInBack" />
+    <item
+        android:id="@+id/EaseOutBack"
+        android:title="EaseOutBack" />
+    <item
+        android:id="@+id/EaseInOutBack"
+        android:title="EaseInOutBack" />
+    <item
+        android:id="@+id/EaseInBounce"
+        android:title="EaseInBounce" />
+    <item
+        android:id="@+id/EaseOutBounce"
+        android:title="EaseOutBounce" />
+    <item
+        android:id="@+id/EaseInOutBounce"
+        android:title="EaseInOutBounce" />
+</menu>

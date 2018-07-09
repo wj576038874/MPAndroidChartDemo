@@ -3,6 +3,7 @@ package com.sy.chat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
@@ -29,9 +30,11 @@ public class MultiBarChartActivity extends AppCompatActivity {
         mBarChart.setDrawValueAboveBar(true);
 
         mBarChart.getDescription().setEnabled(false);
-
+//        mBarChart.setScaleEnabled();
+//        mBarChart.setDragEnabled();
         mBarChart.setMaxVisibleValueCount(60);
         mBarChart.setPinchZoom(false);
+        mBarChart.setScaleMinima(2, 1);//X轴放大两倍，Y轴不变
 
         Legend l = mBarChart.getLegend();
         l.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
@@ -96,7 +99,7 @@ public class MultiBarChartActivity extends AppCompatActivity {
         ll1.enableDashedLine(10f, 10f, 0f);
         ll1.setLineColor(ContextCompat.getColor(this, R.color.youxiu));
         ll1.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);//设置标签显示的位置
-        ll1.setTextColor(ContextCompat.getColor(this , R.color.youxiu));
+        ll1.setTextColor(ContextCompat.getColor(this, R.color.youxiu));
         ll1.setTextSize(10f);
 
         LimitLine ll2 = new LimitLine(60f, "及格");
@@ -104,7 +107,7 @@ public class MultiBarChartActivity extends AppCompatActivity {
         ll2.setLineColor(ContextCompat.getColor(this, android.R.color.holo_orange_light));
         ll2.enableDashedLine(10f, 10f, 0f);//虚线
         ll2.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);//设置标签显示的位置
-        ll2.setTextColor(ContextCompat.getColor(this ,  android.R.color.holo_orange_light));
+        ll2.setTextColor(ContextCompat.getColor(this, android.R.color.holo_orange_light));
         ll2.setTextSize(10f);
 
 
@@ -113,7 +116,7 @@ public class MultiBarChartActivity extends AppCompatActivity {
         ll3.enableDashedLine(10f, 10f, 0f);
         ll3.setLineColor(ContextCompat.getColor(this, android.R.color.holo_red_light));
         ll3.setLabelPosition(LimitLine.LimitLabelPosition.RIGHT_TOP);//设置标签显示的位置
-        ll3.setTextColor(ContextCompat.getColor(this ,  android.R.color.holo_red_light));
+        ll3.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_light));
         ll3.setTextSize(10f);
 
         YAxis leftAxis = mBarChart.getAxisLeft();
@@ -162,7 +165,7 @@ public class MultiBarChartActivity extends AppCompatActivity {
         yVals3.add(new BarEntry(6, 29));
         yVals3.add(new BarEntry(7, 15));
 
-        BarDataSet set1, set2,set3;
+        BarDataSet set1, set2, set3;
 
         if (mBarChart.getData() != null &&
                 mBarChart.getData().getDataSetCount() > 0) {
@@ -175,13 +178,13 @@ public class MultiBarChartActivity extends AppCompatActivity {
         } else {
             set1 = new BarDataSet(yVals1, "2017年增长");
             set2 = new BarDataSet(yVals2, "2018年增长");
-            set3 = new BarDataSet(yVals3 , "2015年增长");
+            set3 = new BarDataSet(yVals3, "2015年增长");
 
-            set1.setColor(ContextCompat.getColor(this , android.R.color.holo_green_light));
-            set2.setColor(ContextCompat.getColor(this , android.R.color.holo_blue_bright));
-            set3.setColor(ContextCompat.getColor(this , android.R.color.holo_purple));
+            set1.setColor(ContextCompat.getColor(this, android.R.color.holo_green_light));
+            set2.setColor(ContextCompat.getColor(this, android.R.color.holo_blue_bright));
+            set3.setColor(ContextCompat.getColor(this, android.R.color.holo_purple));
 
-            BarData data = new BarData(set1, set2,set3);
+            BarData data = new BarData(set1, set2, set3);
             data.setValueTextSize(10f);
             mBarChart.setData(data);
 
@@ -192,6 +195,6 @@ public class MultiBarChartActivity extends AppCompatActivity {
             mBarChart.invalidate();
         }
 
-        mBarChart.animateXY(3000,3000);
+        mBarChart.animateXY(3000, 3000);
     }
 }
